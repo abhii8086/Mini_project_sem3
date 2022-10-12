@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login and registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="page">
+       <div class="form-box"> 
+         <h1 align="center" class="headname">XpertLearning</h1>
+         <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+            <button type="button" class="toggle-btn" onclick="register()">Registor</button>
+            <button type="button" class="toggle-btn" onclick="admin()">Admin Login</button>
+         </div>
+         <div class="social-icons">
+          <a href="https://www.facebook.com/"> <img src="image/fb.png"></a>
+          <a href="https://twitter.com/i/flow/login"> <img src="image/tw.png"></a>
+           <a href="https://www.google.com/"> <img src="image/gp.png"></a>
+           </div>
+           <form id="login"class="input-group">
+              <input type="text" class="input-field" placeholder="User Id" required>
+              <input type="password" class="input-field" placeholder="Enter Password" required>
+              <input type="checkbox" class="check-box1"><span>Remember Password</span>
+              <button type="submit" class="submit-btn">Log in</button>
+          </form>
+      <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required> 
+            <input type="email"class="input-field" placeholder="Email.id" required> 
+            <input type="password" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box2">I agree to the terms & conditions
+            <button type="submit" class="submit-btn">Register</button>
+      </form>
+         <form id="admin" class="input-group">
+            <input type="text" class="input-field" placeholder="Admin Id" required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box2"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log in</button>
+         </form>
+       </div>
+      </div>
+        <script src="script.js"></script>
+</body>
+</html>
